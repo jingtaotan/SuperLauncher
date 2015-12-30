@@ -1,0 +1,33 @@
+﻿<Window x:Class="AdminLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SuperLauncher" Height="497" Width="215"
+        Icon="Images/super-launcher-icon.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="137*"/>
+            <ColumnDefinition Width="61*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel HorizontalAlignment="Left" Height="443" VerticalAlignment="Top" Width="178" Margin="10,10,0,0" Grid.ColumnSpan="2">
+            <Label x:Name="UsernameField" Content="[username]" HorizontalAlignment="Left" Width="174" Margin="0,0,0,10" RenderTransformOrigin="0.5,-0.577"/>
+            <Button x:Name="CopyButton" Content="Copy admin password" Margin="0,0,0,10" Click="CopyButton_Click" />
+            <Button x:Name="RelaunchButton" Content="Relaunch as admin" Margin="0,0,0,30" Click="RelaunchButton_Click" />
+            <Button x:Name="VisualStudio_Button" Height="48" Margin="0,0,0,10" Click="VisualStudio_Button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/icon-vs.png" Height="30" Margin="0,0,10,0"></Image>
+                    <TextBlock VerticalAlignment="Center">Visual Studio</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Command1_Button" Content="Custom command 1" Height="48" Margin="0,0,0,10" Click="Command_Button_Click"/>
+            <Button x:Name="Command2_Button" Content="Custom command 2" Height="48" Margin="0,0,0,10"/>
+            <Button x:Name="Command3_Button" Content="Custom command 3" Height="48" Margin="0,0,0,30"/>
+            <Button x:Name="Settings_Button" Height="48" Margin="0,0,0,10" Click="Settings_Button_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/icon-settings.png" Height="30" Margin="0,0,10,0"></Image>
+                    <TextBlock VerticalAlignment="Center">Settings</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
